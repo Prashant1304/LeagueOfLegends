@@ -1,0 +1,117 @@
+.LOL-images {
+    height: 23.5vh;
+    width: 100%;
+}
+
+.img-div-main {
+    background-color: #161616;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    padding-right: 12px;
+
+}
+
+.img-div-sub {
+    display: flex;
+}
+
+.LOL-disc-header { 
+    font-family: sans-serif;
+    font-size: x-large;
+    color: #F4A027;
+    padding-bottom: 8px;
+
+}
+
+.LOL-disc-price {
+    font-size: large;
+    padding-top: 11px;
+    padding-bottom: 16px;
+}
+
+.LOL-disc-Quantity { 
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.LOL-disc-total {
+    font-size: 12px;
+    padding-bottom: 22px;
+}
+
+.LOL-disc-line {
+    height: 0.5vh;
+    background-color: gray;
+    width: 100%;
+}
+
+.LOL-disc-pack-detail-head {
+    font-size: large;
+}
+
+.LOL-disc-pack-detail {
+    font-size: 13px;
+}
+
+.LOL-disc-main {
+    display: flex;
+    flex-direction: column;
+    padding: 27px;
+    background-color: #232323;
+    color: white;
+    width: 50%;
+}
+
+.LOL-disc-pack {
+    background-color: #373FC5;
+    border: none;
+    color: #FFFFFF;
+    height: 32px;
+
+}
+
+.LOL-disc-about {
+    padding-top: 22px;
+
+}
+
+.LOL-disc-pack-detail-sub {
+    color: #8A8A8A;
+}
+
+.mainPage {
+    display: flex;
+}
+
+.confused {
+    padding-bottom: 10px;
+
+}
+
+.LOL-img-right-padding {
+    padding-right: 12px;
+}
+
+.LOL-img-bottom-padding {
+    padding-bottom: 9px;
+
+}
+
+.LOL-disc-btn-container {
+    border: 1px solid #303030;
+    padding: 6px;
+}
+
+.LOL-disc-btn-subContainer {
+    display: flex;
+    color: #C88627;
+}
+
+.LOL-disc-pack-Qutn {
+    background: none;
+    border: none;
+    color: #BDBDBD;
+}
