@@ -33,7 +33,7 @@ class Main extends Component {
     handleTargetValue(e) {
         let target = e.target.src
         this.setState({value:target})
-        console.log(this.state.value)
+        // console.log(this.state.value)
     }
     render() {
         return(

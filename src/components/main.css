@@ -1,5 +1,5 @@
 .LOL-images {
-    height: 23.5vh;
+    height: 31vh;
     width: 100%;
 }
 
@@ -84,6 +84,7 @@
 
 .mainPage {
     display: flex;
+    height: 97vh;
 }
 
 .confused {
