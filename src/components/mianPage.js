@@ -115,7 +115,7 @@ class Main extends Component {
 
                             <p className = "LOL-disc-pack-detail-sub">
                                 Richard McClintock, a Latin professor at hampden-Sydney College in Virgnia, looked up one of the most obscure Latin words,Consectrtur,
-                                from a Text passage and going through the cities of the world in classical literature, discovered the undoubtable source.
+                                from a Text passage and going through the cities of the world
                             </p>
                         </div>
                     </div>

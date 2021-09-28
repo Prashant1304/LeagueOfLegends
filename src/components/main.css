@@ -1,15 +1,69 @@
-.LOL-images {
-    height: 31vh;
-    width: 100%;
+@media only screen and (max-width: 450px) {
+    .img-div-main {
+        background-color: #161616;
+        display: flex;
+        flex-flow: column;
+        padding-right: 12px;
+    }
+
+    .LOL-disc-about {
+        padding-top: 22px;
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .LOL-images {
+        width: 100%;
+        height: 20vh;
+    }  
 }
 
-.img-div-main {
-    background-color: #161616;
-    display: flex;
-    flex-flow: column;
-    width: 50%;
-    padding-right: 12px;
+@media only  screen and (max-width: 450px) {
+    .mainPage {
+        /* display: flex; */
+        height: 97vh;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .LOL-disc-main {
+        display: flex;
+        flex-direction: column;
+        background-color: #232323;
+        color: white;
+        padding-top: 21px;
+    }
+} 
 
+@media only screen and (min-width: 450px) {
+    .mainPage {
+        display: flex;
+        height: 97vh;
+    }
+    .img-div-main {
+        background-color: #161616;
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+        padding-right: 12px;
+    }
+    .LOL-disc-main {
+        display: flex;
+        flex-direction: column;
+        padding: 27px;
+        background-color: #232323;
+        color: white;
+        width: 50%;
+    }
+
+    .LOL-images {
+        height: 31vh;
+        width: 100%;
+    }
+
+    .LOL-disc-about {
+        padding-top: 22px;
+    }
 }
 
 .img-div-sub {
@@ -56,14 +110,6 @@
     font-size: 13px;
 }
 
-.LOL-disc-main {
-    display: flex;
-    flex-direction: column;
-    padding: 27px;
-    background-color: #232323;
-    color: white;
-    width: 50%;
-}
 
 .LOL-disc-pack {
     background-color: #373FC5;
@@ -73,19 +119,11 @@
 
 }
 
-.LOL-disc-about {
-    padding-top: 22px;
-
-}
 
 .LOL-disc-pack-detail-sub {
     color: #8A8A8A;
 }
 
-.mainPage {
-    display: flex;
-    height: 97vh;
-}
 
 .confused {
     padding-bottom: 10px;
@@ -116,3 +154,4 @@
     border: none;
     color: #BDBDBD;
 }
+
