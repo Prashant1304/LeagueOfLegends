@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+
 import "./main.css"
 import img1 from "./images/img1.jpeg"
 import img2 from "./images/ing2.jpeg"
@@ -13,55 +14,111 @@ class Main extends Component {
         this.state = {
             count:0,
             value:img1,
-            data:""
+            value2:img2,
+            value3:img3,
+            value4:img4,
+            value5:img5,
+            divValue:"",
         }
         this.handleCountDec = this.handleCountDec.bind(this)
         this.handleCountInc = this.handleCountInc.bind(this) 
         this.handleTargetValue = this.handleTargetValue.bind(this)
-
+        this.handleMultipleClick = this.handleMultipleClick.bind(this)
     }
 
 
     handleCountInc() {
         this.setState({ count:this.state.count+1 })
     }
+
     handleCountDec() {
         this.setState({ count:this.state.count-1 })
-
     }
 
     handleTargetValue(e) {
         let target = e.target.src
-        this.setState({value:target})
-        // console.log(this.state.value)
+        let target3 = e.target.className
+         setTimeout(() => {
+             
+             this.setState({value:target})
+             console.log("done1")
+             
+          }, 1006);
+
+        let target2 = e.target.alt
+       if (target2 == "img2" ) {
+          setTimeout(()=>{
+              this.setState({value2:this.state.value})
+              console.log("done")
+          },1000)
+
+          return this.handleMultipleClick
+
+        } else if (target2 == "img3") {
+            setTimeout(()=>{
+                
+                this.setState({value3:this.state.value})
+                console.log("done")
+            },1000)
+        return this.handleMultipleClick
+
+
+        } else if (target2 == "img4") {
+            setTimeout(()=>{
+                
+                this.setState({value4:this.state.value})
+                console.log("done")
+            },1000)
+        return this.handleMultipleClick
+
+
+        } else if (target2 == "img5") {
+            setTimeout(()=>{
+                
+                this.setState({value5:this.state.value})
+                console.log("done")
+            },1000)
+        return this.handleMultipleClick
+
+        }
+        console.log(target2)
+
+    }
+
+    handleMultipleClick(e) {
+        if (e==1) {
+            console.log("Adawdad")
+            return "1s"
+        }
     }
     render() {
+        
         return(
             <div className = "mainPage">
                 {/* {this.state.value} */}
                 <div className = "img-div-main">
-                    <div className = "confused">
-                        <img onClick = {this.handleTargetValue} value = "1" className = "LOL-images" src = {this.state.value}></img>
+                    <div >
+                        <img   style={{ transition: this.handleMultipleClick(1)}} onClick = {this.handleTargetValue} alt="img1"  className = "LOL-images" src = {this.state.value}></img>
                     </div>
                     
                     <div className = "img-div-sub">
                         <div className = "LOL-img-right-padding">
-                            <div className = "LOL-img-bottom-padding">
-                                <img onClick = {this.handleTargetValue} value = "2" className = "LOL-images" src = {img2}></img>
+                            <div className = "LOL-img-bottom-padding" >
+                                <img  onClick = {this.handleTargetValue} alt="img2" valuee = "2" className = "LOL-images1" src = {this.state.value2}></img>
                             </div>
 
-                            <div>
-                                <img onClick = {this.handleTargetValue} value = "3" className = "LOL-images" src = {img3}></img>
+                            <div >
+                                <img  onClick = {this.handleTargetValue} alt="img3" value = "3" className = "LOL-images2" src = {this.state.value3}></img>
                             </div>
                         </div>
 
                         <div>
-                            <div className = "LOL-img-bottom-padding">
-                                <img onClick = {this.handleTargetValue} value = "4" className = "LOL-images" src = {img4}></img>
+                            <div className = "LOL-img-bottom-padding" >
+                                <img  onClick = {this.handleTargetValue} alt="img4" value = "4" className = "LOL-images3" src = {this.state.value4}></img>
                             </div>
 
-                            <div>
-                                <img onClick = {this.handleTargetValue} value = "5" className = "LOL-images" src = {img5}></img>
+                            <div >
+                                <img onClick = {this.handleTargetValue}  alt="img5" value = "5" className = "LOL-images4" src = {this.state.value5}></img>
                             </div>
                         </div>
                     </div>
